@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eef6fb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +29,81 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.p-tabview.p-component {
+  width: 650px;
+  border: 4px solid #fefeff;
+  border-radius: 15px;
+}
+.p-tabview .p-tabview-nav li {
+  width: 33%;
+}
+.p-tabview .p-tabview-nav li a{
+  background-color: #eef6fb;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  border: 0px;
+}
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
+  display: none;
+}
+.today {
+  background-color: #eef6fb;
+  width: 100%;
+  height: 255px;
+  padding: 20px;
+}
+.today div{
+  margin: 10px 0;
+}
+.today div:first-child{
+  font-size: 25px;
+}
+.otherDayContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.otherDay {
+  background-color: #eef6fb;
+  width: 24%;
+  border-top: 4px solid #fefeff;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.p-tabview-title {
+  margin: 0 auto;
+}
+.today svg {
+  font-size: 60px;
+}
+.todayInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todayInfoContainer div {
+  text-align: left;
+  margin-left: 20px;
+}
+.temp {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.temp2 {
+  font-weight: bold;
+}
+.p-tabview-panels{
+  height: 438px;
+}
+.otherDay svg {
+  font-size: 25px;
+}
+svg {
+  color: #6eafe6;
 }
